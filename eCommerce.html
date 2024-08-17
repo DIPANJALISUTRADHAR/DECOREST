@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eCommerce.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <title>DECOREST</title>
+</head>
+<body>
+   <!---------------------------------nav section-------------------------------------> 
+<div id="originalPageHeader">
+    <nav>
+        <div id="navbar">
+          <div id= 'decorest'> 
+            <img id= "logoImage" src="LOGO_IMG.png" alt="logo">
+            <p id= 'logo'> DECOREST </p> 
+            <span id='searchNav'> <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder='Search for Products, Brands and more '></span>
+            <span><i id='dropDown'class="fa-solid fa-ellipsis-vertical"></i></span>
+          </div>
+        </div>
+        <div id="navAnchor">
+         <a href="#" data-target = 'homeDiv' id= 'home'> HOME </a>
+         <a href="#" data-target = 'profileDiv' id= 'profile'> PROFILE </a>
+         <a href="#" data-target = 'productsDiv' id= 'products'> PRODUCTS </a>
+         <a href="#"data-target = 'servicesDiv' id= 'services'> SERVICES </a>
+         <a href="#" data-target = 'reviewsDiv'id= 'reviews'> REVIEWS </a>
+         <a href="#"data-target = 'contactDiv' id= 'contact_us'> CONTACT </a>
+         <div id="dropDiv">
+                <span><i class="fa-regular fa-bell"></i>Notifications</span>
+                <span><i class="fa-solid fa-headphones"></i> 24 × 7 Customer care </span>
+                <span><i class="fa-solid fa-download"></i>Download App </span>
+                <span><i class="fa-solid fa-arrow-up-right-from-square"></i> Share link</span>
+         </div>
+        </div>
+          <div id='tagline'>
+            <p id='tagline1'> Sculpted by Nature,</p>
+            <br>          
+            <p id='tagline2'>Styled by You,</p>  
+            <br>                
+            <p id='tagline3'>and Decoreated by us ! </p>
+            </p>
+           
+        </div>
+    </nav>
+</div>
+<div id="displayImage">
+    <img src="navBarImage.png" alt="image">
+</div>
+<!------------------------------------------Main Section---------------------------------------------->
+<!------------------------------------------Home Section---------------------------------------------->
+
+    <div id="homeDiv">
+        <img id='homeImage' src="HOME_IMAGE.jpg" >
+        <p id = 'heading'><h1>Welcome to our website</h1></p>
+        <P id='welcomeMsg'></P>   
+        <button id='goToForm'> Start  here </button>  
+                
+    </div>
+<!------------------------------------------product section------------------------------------------->
+<div id="productsDiv">
+    <div id='discount'>
+        <span> Flat INR 1000 Off on First order </span>
+    </div>
+    <div id="productsDiv_1">
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_1.jpeg" >
+                <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+            <div class='description'>
+                <span class='descriptionpara'>Sofa set with a fire place</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>1,50,000</span></b>(55% off)</span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span> 
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div>
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p> </span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'> </span>      
+            </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_2.webp" >
+                        <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Study table with book shelf</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>1,00,000</span></b>   (35% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span>
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input  class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div> 
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p></span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+            </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_3.jpg" >
+                        <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Full hallroom with wall warbdrobe</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>3,50,000</span></b>   (45% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span>
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div> 
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p></span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+             </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_4.jpeg" >
+                        <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Double bed with a single sofa</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>1,00,000</span></b>   (15% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span> 
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input  class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div>
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p></span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+            </div>    
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_5.jpeg" >
+                        <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Dressing table</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>1,00,000</span></b>   (15% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span>
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div> 
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p></span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>  
+            </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_6.jpg" >
+                        <span class='hearts'><i id="heartIcon"  class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Wall wardrobe with table</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>2,50,000</span></b>   (30% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span> 
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div>
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p></span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+            </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_7.jpg" >
+                        <span class='hearts'><i id="heartIcon"  class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Showcase with table set</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>2,00,000</span></b>   (40% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span>
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div> 
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p> </span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+            </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="IMG_5.webp" >
+                        <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Sitting room with sofa-cum-bed</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>3,50,000</span></b>   (25% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span>
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div> 
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p> </span>
+            </div>
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+            </div>
+               
+        </div>
+        <div class='totalDiv'>
+            <div class="itemDiv">
+                <img  class='productImage'class='image1'src="PRODUCT_image_8.webp" >
+                        <span class='hearts'><i id="heartIcon" class="fa-duotone fa-solid fa-heart"></i></span>
+            </div>
+           
+            <div class='description'>
+                <span class='descriptionpara'>Dinning tables and chairs</span>
+                <span class='viewMore'> ₹<b><span class='priceTag'>2,50,000</span></b>   (28% off)   </span>
+            </div>
+            <div class="cartDiv">
+                <span class='addToCart'><i class="fa-solid fa-cart-shopping"></i> Add to Cart </span>
+                <div class="addRemoveNumber">
+                    <span class='Add'><i  class="fa-regular fa-square-plus"></i></span>
+                    <input class= 'addRemoveInput' type="text" value='0'>
+                    <span class='Remove' ><i  class="fa-regular fa-square-minus"></i></span>
+                </div> 
+                <span class='cartText'><i class="fa-solid fa-check" class='cartCheck'></i><p></p></span>
+                
+            </div>
+            
+            <div class = 'wishlistText'>
+            <i class="fa-solid fa-check" class='addCheck'></i><span class='addText'></span>
+                  
+           </div>
+               
+        </div>
+    </div>
+    <div id="cartItem">
+        <div id="freeOffer">
+            <div id="itemAdded">
+                <p><i id ='bagIcon' class="fa-solid fa-bag-shopping"></i></p>
+                <input id= 'itemInput'type="Number" value= '0'>
+                <span> Item are added to cart </span>
+                <p id='totalPay'>Total Amount to pay : 
+                    <br>
+                    Rs.<input id= 'payInput' type="text" value= '0'>
+                    <br>
+                </p>
+            </div>
+            <button id='placeOrder' > Place order now <i class="fa-solid fa-arrow-right"></i></button>    
+            <div id="offerLine">
+                <p id='line1'> Upto 80% off </p>
+            <p id='line2'> From 13th - 18th August </p>
+            <p id='line3'> Hurry up !</p>
+            <p  id='line4'> Use FREEDOM15 code to get flat 15% off at your purchase. </p>
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+</div>
+    
+    
+
+<!---------------------------------------------------Services section-------------------------------->
+<div id="servicesDiv">
+        <h4 id='heading'> Services </h4>
+        <div id='weOffer'>
+            <p > What we offer </p>
+            <br>
+            <span id='weOfferText'>You can go for customised furniture</span>
+        </div>
+
+    <div id='process'>
+        <div id="customDesign1">
+            <i class="fa-solid fa-envelopes-bulk"></i>
+            <span>
+                 We accept your customize Design 
+                <br>through mail-Adress
+                <br> or whats app
+            </span>
+        </div>
+
+        <div id="estimatePrice1">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <span> We will send you 
+                <br>
+                the estimate price
+            </span>
+        </div>
+        <div id="delivery1">
+            <i class="fa-solid fa-calendar-days"></i>
+                <span>Delivery will be placed within
+                    <br>
+                     promised date
+                </span>
+            </div>
+        <div id='mainDecoration1'>
+            <i class="fa-solid fa-people-group"></i>
+            <span>
+                Our working team
+                <br>
+                will help to decorate your place
+            </span>
+        </div>
+        <div id="silde1">
+            <i class="fa-solid fa-chevron-right" id= 'slideIcon1'></i>
+        </div>
+    </div>
+    <!-----------------------Another process Div------------------------------------>
+    <div id='anotherProcess'>
+        <div id="silde2">
+            <i class="fa-solid fa-chevron-left" id= 'slideIcon2'></i>
+        </div>
+        <div id="customDesign2">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>
+                 You choose and
+                <br>keep into cart
+                <br> from our website
+            </span>
+        </div>
+
+        <div id="estimatePrice2">
+            <i class="fa-duotone fa-solid fa-file-invoice"></i>
+            <span> Get your invoice
+                <br>
+                and you can also pay later
+            </span>
+        </div>
+        <div id="delivery2">
+            <i class="fa-solid fa-calendar-days"></i>
+                <span>Delivery will be placed within
+                    <br>
+                     promised date
+                </span>
+            </div>
+        <div id='mainDecoration2'>
+            <i class="fa-solid fa-people-group"></i>
+            <span>
+                Our working team
+                <br>
+                will help to decorate your place
+            </span>
+        </div>
+        
+    </div>
+</div>
+    
+    
+
+<!----------------------------------------------------Reviews section-------------------------------->
+    <div id="reviewsDiv">
+        <h4 id = 'heading'> Reviews </h4>
+        <br>
+        <span> <h3> Listen to our Customers </h3>  </span>
+        <div id="customerReviewPage1">
+            <div id="customer_1">
+                    <img src="C_IMAGE_1.jpg" alt="image">
+                    <i id='quoteLeft'class="fa-solid fa-quote-left"></i>
+                    <span id="review_1"></span>
+                    <p id='customerName'> - Nayantara Sinha </p>
+                    <i id='quoteRight'class="fa-solid fa-quote-right"></i>
+            </div>
+            <div id="customer_2">
+                <img src="C_IMAGE_2.webp" alt="image">
+                <i id='quoteLeft'class="fa-solid fa-quote-left"></i>
+                    <span id="review_2"></span>
+                    <p id='customerName'> - Diana Hatson</p>
+                    <i id='quoteRight'class="fa-solid fa-quote-right"></i>
+            </div>   
+        </div>
+        <div id="customerReviewPage2">
+            <div id="customer_1">
+                    <img src="C_IMAGE_3.jpg" alt="image">
+                    <i id='quoteLeft'class="fa-solid fa-quote-left"></i>
+                    <p id="review_3"></p>
+                    <p id='customerName'> - Ritabrata Chatterjee </p>
+                    <i id='quoteRight'class="fa-solid fa-quote-right"></i>
+            </div>
+            <div id="customer_2">
+                <img src="C_IMAGE_4.jpg" alt="image">
+                <i id='quoteLeft'class="fa-solid fa-quote-left"></i>
+                    <p id="review_4"></p>
+                    <p id='customerName'> - Pritam Ganguly </p>
+                    <i id='quoteRight'class="fa-solid fa-quote-right"></i>
+             </div>   
+        </div>
+        <div id="customerReviewPage3">
+            <div id="customer_1">
+                    <img src="C_IMAGE_5.jpeg" alt="image">
+                    <i id='quoteLeft'class="fa-solid fa-quote-left"></i>
+                    <p id="review_5"></p>
+                    <p id='customerName'> - Susmitha Iyer </p>
+                    <i id='quoteRight'class="fa-solid fa-quote-right"></i>
+            </div>
+            <div id="customer_2">
+                <img src="C_IMAGE_6.jpg" alt="image">
+                <i id='quoteLeft'class="fa-solid fa-quote-left"></i>
+                    <p id="review_6"></p>
+                    <p id='customerName'> - Keshab Batra </p>
+                    <i id='quoteRight'class="fa-solid fa-quote-right"></i>
+             </div>   
+        </div>
+        <div id='nextPage'>
+            <button id='button1'>1</button>
+            <button id='button2'>2</button>
+            <button id='button3'>3</button>
+            <span>... Next ></span>
+           
+            
+        </div>
+    </div>
+<!----------------------------------------------------Contact section-------------------------------->        
+    <div id="contactDiv">
+        <div id="head">
+            <h4 id = 'heading'> Contact us </h4>
+        <span> Feel free to connect with us </span>
+        <br>
+        <span></span>
+        </div>
+        <div id="contactDetails">
+            <div id="officeAddress">
+                <span> <h3> Main branch office address </h3> </span>
+                <br>
+                <span id='address'></span>
+            </div>
+            <div id="formSection"> 
+                <form action="submit" id='form'>
+                    <div id="formContent">
+                        <p> Create an Account </p>
+                    <div>
+                        <input type="text" id= 'name' id='errorName' name='Name' placeholder = 'Name'>
+                        <p id='errorName'></p>
+                    </div>
+                    <br/>
+                    <div>
+                        <input type="text" id= 'phone' name='PhoneNumber' placeholder = 'Phone Number'>
+                        <p id='errorPhone'></p>
+                    </div>
+                    
+                    <br/>
+                    <div>
+                        <input type="text" id= 'email' name='EmailAddress' placeholder = 'Email Address'>
+                        <p id='errorEmail'></p>
+                    </div>
+                    <div>
+                        <label> <input type="checkbox" id='checkBox' name='CheckBox'> Click here to get Updates on Whats App</label>
+                    </div>
+                    <div>
+                    <button type ="submit" id='submitBtn'> Open Your New Account </button>
+                    </div>
+                    
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+<!---------------------------------------------newPage section------------------------------------->
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+      integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+      
+<script src= ' eCommerce.js'></script>
+
+</body>
+</html>
+    

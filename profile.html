@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title> My Profile </title>
+</head>
+<body>
+    <div id="navBar">
+        <div id="leftDiv">
+            <img src="profile_image.jpg" >
+            <span><h3>Hello,</h3></span>
+            <span> Dipanjali  Sutradhar</span>
+                <div id="myOrders">
+                   <span id= 'orderSpan'> Go to My Orders </span>
+                </div>
+                <div id="personalInfo">
+                    <span> Personal Information </span>
+                </div>
+                <div id="wishList">
+                    <span> My wishlist </span>
+                </div>
+                <div id="changePassword">
+                    <span> Change Password </span>
+                </div>
+                <div id="returnToWebsite">
+                    <span> Return to the Website </span>
+                </div>    
+        </div>
+        <div id="rightDiv">
+                <span> <h4> Account Information </h4></span>
+            <div id='accountDetailsDiv'>
+                <span id='editInfo'><i class="fa-solid fa-pen-to-square"></i> Edit Information </span>
+                <div id="accName">
+                    <div id='span1'>
+                        <span > Name </span>
+                    </div>
+                    <div id='span2'>
+                         <span> Dipanjali Sutradhar</span> 
+                    </div>
+                    
+                </div>
+                <div id="dob">
+                    <div id='span1'>
+                        <span > Date of Birth </span>
+                    </div>
+                    <div id='span2'>
+                         <span> 24-Sep-1998 </span> 
+                    </div>  
+                </div>
+                <div id="gender">
+                    <div id='span1'>
+                        <span > Gender </span>
+                    </div>
+                    <div id='span2'>
+                         <span id="selectGender"> Female</span> 
+                    </div>  
+                </div>
+                <div id="email">
+                    <div id='span1'>
+                        <span > email address</span>
+                    </div>
+                    <div id='span2'>
+                         <span> d.sutradhar.official@gmail.com </span> 
+                    </div>  
+                </div>
+                <div id="phoneNum">
+                    <div id='span1'>
+                        <span >Phone Number </span>
+                    </div>
+                    <div id='span2'>
+                         <span> +916291942998 </span> 
+                    </div>  
+                </div>
+            </div>
+            <div id="myOrdersDetailDiv">
+                <span><h3> Items in your Cart  <i id ='bagIcon' class="fa-solid fa-bag-shopping"></i> </h3></span>
+                <div id="myItems">
+                    <span id='descriptionText'></span>
+                    <span> Number of Items : <input id='quantity' type="text" value='0'></span>
+                    <span id='price'> Price is : ₹ </span>
+                    <button id='placeOrder'> Place order now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+        
+            </div>
+            <div id="myWishListDetailsDiv">
+                <span><h3> Your wishlist   </h3></span>
+                <div id="wishItems">
+                    <div id="wishItem1">
+                        <img src="IMG_1.avif" >
+                        <span>Full Hallroom </span>
+                        <button> Buy Now </button>
+                        <button> Remove </button>
+                    </div>
+                    <div id="wishItem2">
+                        <img src="IMG_5.webp" >
+                        <span> Windows and Sofa-cum-bed </span>
+                        <button> Buy Now </button>
+                        <button> Remove </button>
+                    </div>
+                    
+                </div>
+        
+            </div>
+            <div id="passwordChangeDiv">
+                <span><h4> Change your Password </h4></span>
+                <div id="changeDiv">
+                    <span> Registered Email Address:   <p> d.sutradhar.official@gmail.com </p> </span>
+                    <span> Enter old Password <input type="text"></span>
+                <span> Enter new Password <input type="text"></span>
+                <span> Re-enter new Password <input type="text"></span>
+                <button id='passwordChangeButton'>Change your Password </button>
+                <span> <a href="##"> Forgot Password? </a></span>
+                </div>
+            </div>
+            <div id='editAccountDetailsDiv'>
+                <div id="accName">
+                    <div id='span1'>
+                        <span > Name </span>
+                    </div>
+                    <div id='span2'>
+                         <span> Dipanjali Sutradhar</span> 
+                    </div>
+                    
+                </div>
+                <div id="dob">
+                    <div id='span1'>
+                        <span > Date of Birth </span>
+                    </div>
+                    <div id='span2'>
+                         <label for="date" placeholder='DD-MM-YYYY'><input type="date" ></label>
+
+                         
+                    </div>  
+                </div>
+                <div id="gender">
+                    <div id='span1'>
+                        <span > Gender </span>
+                    </div>
+                    <div id='span2'>
+                        <label for="gender"></label>
+                        <select id="gender" name="gender">
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select> 
+                    </div>  
+                </div>
+                <div id="email">
+                    <div id='span1'>
+                        <span > Email address</span>
+                    </div>
+                    <div id='span2'>
+                         <input type="text" placeholder='Enter new email address'>
+                    </div>  
+                </div>
+                <div id="phoneNum">
+                    <div id='span1'>
+                        <span >Phone Number </span>
+                    </div>
+                    <div id='span2'>
+                        <input type="number" placeholder='Enter new phone number'>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+    
+    <script src="profile.js"></script>
+</body>
+</html>

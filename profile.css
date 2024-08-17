@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 20px;
+}
+#navBar{
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 10px 0 20px;
+    
+}
+
+#leftDiv{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    position: relative;
+    height: 900px;
+    border-radius: 8px ;
+    background-color: rgb(191, 191, 227);
+    margin-left: 20px ;
+    margin-right: 20px;
+    padding-right: 50px;
+}
+#leftDiv img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 50%;
+
+}
+
+#leftDiv div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: left;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 14px;
+    background-color: rgb(201, 113, 142);
+}
+
+#leftDiv span{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+
+}
+#leftDiv div:hover {
+    transform: translateY(-2px);
+    
+}
+.commonProp{
+    border: 2px solid rgb(24, 16, 51);
+    color: rgb(20, 26, 112);
+    font-weight: 600;
+}
+/* ------------------right div------------------- */
+#rightDiv{
+    flex-direction: column;
+    width: 800px;
+    margin: 2px;
+    border-radius: 8px ;
+    display: flex;
+    
+}
+#rightDiv h4{
+    font-size: 30px;
+    margin: 0 0 0 8px;
+    background-color: rgb(42, 104, 162);
+    height: 80px;
+    padding: 20px 0 10px 10px;
+    border-radius: 8px ;
+}
+
+#accountDetailsDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 8px ;
+   background-color: rgb(170, 184, 196);
+    justify-content: center;
+}
+#editInfo{
+    margin-left: 540px;
+    margin-top: 20px;
+    width: 200px;
+    height: 20px;
+   
+}
+#editInfo i{
+    cursor: pointer;
+}
+#accountDetailsDiv div{
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 20px;
+    width: 650px;
+    height: 60px;
+    border-image: linear-gradient(to right, rgba(29, 13, 144, 0), rgba(20, 10, 58, 0.5)) 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border: 2px solid transparent;
+    background-color: rgb(200, 197, 197);
+    
+}
+#accountDetailsDiv div #span1{
+    border: 1px solid transparent;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 2px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+   justify-content: center;
+}
+#accountDetailsDiv div #span2{
+    border: 1px solid transparent;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 2px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+   justify-content: center;
+}
+#accountDetailsDiv div div{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+#accountDetailsDiv #selectGender{
+    outline: none;
+    border: 1px solid transparent;
+}
+
+/* -----------my orders div------------------- */
+#myOrdersDetailDiv{
+    display: none;
+    flex-direction: column;
+    width: 740px;
+    border-radius: 8px ;
+    border: 2px solid transparent;
+    border-radius: 8px ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-bottom: 400px;
+    background-color: rgb(159, 124, 153);
+   
+}
+#myOrdersDetailDiv span{
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    
+}
+#descriptionText{
+    height: 200px;
+}
+#myItems{
+    display: flex;
+    flex-direction: column;
+}
+#myItems input{
+    margin-left: 20px;
+}
+#myItems button{
+    width: 190px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 250px;
+    margin-bottom: 39px;
+    background-color: rgb(98, 134, 223);
+    font-size: 20px;
+}
+#myOrdersDetailDiv #heading{
+    color:rgb(13, 29, 56);
+    height: 20px;
+    width: 650px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 6px;
+    border: 2px solid transparent;
+    border-radius: 8px ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.9);
+    
+}
+#quantity{
+    width: 60px;
+    height: 30px;
+    border: 2px solid transparent;
+    border-radius: 8px ;
+    padding-left: 6px;
+}
+/* ------------mywishlistDiv-------------------- */
+#myWishListDetailsDiv{
+    display: none;
+    flex-direction: column;
+    width: 740px;
+    height: 600px;
+    background-color: rgb(200, 198, 211);
+    padding-left: 20px;
+    padding-bottom: 150px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#myWishListDetailsDiv h3{
+    font-size: 40px;
+    width: 500px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: -100px;
+   
+}
+
+#myWishListDetailsDiv img{
+    width: 150px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 40px;
+    
+    
+}
+#myWishListDetailsDiv button{
+    width: 100px;
+    height: 40px;
+    margin: 50px 40px;
+    border-radius: 8px;
+    
+    
+}
+#wishItem1, #wishItem2{
+    width: 600px;
+    height: 180px;
+    border-radius: 8px ;
+    display:flex;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+#wishItem1 span,#wishItem2 span{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+/* -----------------------password change div------------------- */
+#passwordChangeDiv{
+    display: none;
+    flex-direction: column;
+    width: 740px;
+    height: 600px;
+    background-color: rgb(200, 198, 211);
+    padding-left: 20px;
+    padding-bottom: 150px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+#passwordChangeDiv h4{
+    font-size: 30px;
+    width: 700px;
+    height: 80px;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+   
+}
+#passwordChangeDiv input{
+    width: 350px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+#changeDiv{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    margin-top: 20px;
+    align-items: flex-start;
+    
+   
+}
+#changeDiv span{
+    margin-bottom: 20px;
+}
+#passwordChangeDiv p{
+    display: inline;
+    padding-left: 10px;
+    width: 300px;
+    height: 40px;
+    color: rgb(82, 80, 80);
+    border: 2px solid transparent;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+#passwordChangeDiv a{
+    
+    margin-left: 240px;
+    margin-bottom: -234px;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+#passwordChangeDiv button{
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(140, 140, 232);
+    cursor: pointer;
+}
+/* --------------edit infomation----------- */
+#editAccountDetailsDiv{
+    display: none;
+    flex-direction: column;
+    width: 740px;
+    height: 600px;
+    
+    background-color: rgb(179, 175, 194);
+    padding-left: 20px;
+    padding-bottom: 150px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    align-items: center;
+}
+#editAccountDetailsDiv div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 20px;
+    width: 650px;
+    height: 60px;
+    
+    
+    
+}
+#accName,#dob,#gender,#email,#phoneNum{
+    border: 1px solid black;
+}
+#editAccountDetailsDiv #span2 i{
+    width: 300px;
+    height: 80px;
+}
+#editAccountDetailsDiv #span1{
+    
+    width: 200px;
+    height: 40px;
+    margin-bottom: 2px;
+    margin-right: 0px;
+    margin-top: 5px;
+    margin-left: -52px;
+    text-align: center;
+    vertical-align: middle;
+   justify-content: center;
+}
+#editAccountDetailsDiv #span2{
+    
+    width: 200px;
+    height: 40px;
+    margin-bottom: 2px;
+    margin-right: 0px;
+    margin-top: 5px;
+    text-align: center;
+    vertical-align: middle;
+   justify-content: center;
+}

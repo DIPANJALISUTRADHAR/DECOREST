@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#confirmDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 30px;
+    gap: 20px;
+    animation: blink 0.8s ease-in;
+}
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+#return{
+    color: rgb(21, 21, 136);
+    cursor: pointer;
+}
